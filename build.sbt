@@ -8,7 +8,8 @@ lazy val root = (project in file("."))
       libraryDependencies ++= Seq(
         "dev.zio" %% "zio" % "1.0.0",
         "dev.zio" %% "zio-streams" % "1.0.0",
-        "dev.zio" %% "zio-test" % "1.0.0" % Test
+        "software.amazon.awssdk" % "dynamodb" % "2.13.70",
+        "dev.zio" %% "zio-test" % "1.0.0"
       )
     )
   )
